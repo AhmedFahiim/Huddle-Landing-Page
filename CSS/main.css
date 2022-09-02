@@ -208,9 +208,11 @@ footer .container .col:first-child .e-mail {
   display: flex;
   align-items: center;
 }
-footer .container .col:first-child .number span,
-footer .container .col:first-child .e-mail span {
+footer .container .col:first-child .number a,
+footer .container .col:first-child .e-mail a {
+  display:inline-block;
   margin-left: 15px;
+  color:#fff;
 }
 /* end first column */
 /* start second and three column */
