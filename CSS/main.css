@@ -212,8 +212,14 @@ footer .container .col:first-child .number a,
 footer .container .col:first-child .e-mail a {
   display:inline-block;
   margin-left: 15px;
-  color:#fff;
+  color: rgb(255 255 255 /0.7);
+  transition:0.3s;
 }
+footer .container .col:first-child .number a:hover,
+footer .container .col:first-child .e-mail a:hover {
+
+color:#fff;
+} 
 /* end first column */
 /* start second and three column */
 footer .container .col:nth-child(2),
