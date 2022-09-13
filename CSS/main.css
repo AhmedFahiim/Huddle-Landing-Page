@@ -173,10 +173,11 @@ footer {
 footer .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 /* start first column */
 footer .container .col:first-child {
-  flex-basis: 30%;
+  flex-basis: 35%;
 }
 footer .container .col:first-child > div {
   margin-bottom: 20px;
@@ -210,16 +211,15 @@ footer .container .col:first-child .e-mail {
 }
 footer .container .col:first-child .number a,
 footer .container .col:first-child .e-mail a {
-  display:inline-block;
+  display: inline-block;
   margin-left: 15px;
   color: rgb(255 255 255 /0.7);
-  transition:0.3s;
+  transition: 0.3s;
 }
 footer .container .col:first-child .number a:hover,
 footer .container .col:first-child .e-mail a:hover {
-
-color:#fff;
-} 
+  color: #fff;
+}
 /* end first column */
 /* start second and three column */
 footer .container .col:nth-child(2),
@@ -249,10 +249,9 @@ footer .container .col:last-child a {
 }
 /* end fourth column */
 footer .copy-right {
-  position: absolute;
   font-size: 13px;
-  right: 65px;
-  bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
 }
 footer .copy-right span:first-of-type {
   color: white;
@@ -309,13 +308,14 @@ footer .copy-right span:first-of-type span {
   footer .container .col:nth-child(4) a {
     margin-right: 20px;
   }
-  footer .copy-right {
-    right: 50%;
-    transform: translateX(50%);
-  }
   /* end footer */
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .container .col:first-child {
+    flex-basis: 50%;
+  }
+}
 @media (min-width: 450px) and (max-width: 767px) {
   .landing .container .holder {
     margin-top: 200px;
